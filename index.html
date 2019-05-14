@@ -29,22 +29,20 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="features-list">
+          <!-- Блок с инпутами для переключения слайдом должен быть тут. Один один для всех слайдов. -->
           <li class="features-item">
-            <!-- Здесь будет форма для переключения слайдера -->
             <h3>Долго, дорого, скупрпулезно.</h3>
             <p>Математически выверенный дизайн вашего сайта или мобильного приложения</p>
             <a class="button" href="#">Узнать больше</a>
             <!-- предполагаю, что img будет фоном, в html не вставляла -->
           </li>
           <li class="features-item">
-            <!-- Здесь будет форма для переключения слайдера -->
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button" href="#">Узнать больше</a>
             <!-- предполагаю, что img будет фоном, в html не вставляла -->
           </li>
           <li class="features-item">
-            <!-- Здесь будет форма для переключения слайдера -->
             <h3>Только ночь, только хардкор.</h3>
             <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается</p> 
             <a class="button" href="#">Узнать больше</a>
@@ -79,7 +77,7 @@
       <!-- Описание студии -->
       <section class="description">
         <h2 class="visually-hidden">Описание</h2>
-        <b>Мы - маленькая но гордая дизайн-студия из Краснодара</b>
+        <strong>Мы - маленькая но гордая дизайн-студия из Краснодара</strong>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3>Выполняем заказы на разработку:</h3>
         <ul class="order-list">
@@ -91,7 +89,9 @@
       <!-- Статистика студии -->
       <section class="statistics">
         <!--размеры логотипа пока не прописывала-->
-        <img src="img/index-logo.svg" width="" height="" alt="Логотип дизайн-студии Nerds"> 
+        <div class="logo">
+          <img src="img/index-logo.svg" width="" height="" alt="Логотип дизайн-студии Nerds"> 
+        </div>
         <table >
           <caption>С 2004 года любим точность во всем:</caption>
           <tr>
@@ -112,9 +112,9 @@
       <section class="partners">
         <ul class="partners-list">
           <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.svg" alt="Логотип Htmlacademy"></a></li>
-          <li><img src="img/borodinski-logo.svg" alt="Логотип барбершоп Borodinski"></li>
-          <li><img src="img/pink-logo.svg" alt="Логотип Pink"></li>
-          <li><img src="img/mishka-logo.svg" alt="Логотип Mishka"></li>
+          <li><a href="#"><img src="img/borodinski-logo.svg" alt="Логотип барбершоп Borodinski"></a></li>
+          <li><a href="#"><img src="img/pink-logo.svg" alt="Логотип Pink"></a></li>
+          <li><a href="#"><img src="img/mishka-logo.svg" alt="Логотип Mishka"></a></li>
         </ul>       
       </section>
     </main>
@@ -126,11 +126,10 @@
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-      <div class="maps">
-        <script type="text/javascript"></script>
+        <div class="friends">
+          <strong>Давайте дружить, это выгодно!</strong>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
   </body>
