@@ -8,8 +8,7 @@
     <header class="site-header">
       <nav class="main-navigation">
       	<a class="main-header-logo">
-          <!--размеры логотипа пока не прописывала-->
-          <img src="img/nerds-logo.svg" width="" height="" alt="Логотип дизайн-студии Nerds">
+          <img src="img/nerds-logo.svg" width="160px" height="65px" alt="Логотип дизайн-студии Nerds">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
@@ -19,7 +18,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="basket">
-            <a class="basket-link" href="#">Корзина</a> <!--какую указывать ссылку?-->
+            <a class="basket-link" href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -91,9 +90,8 @@
       </section>
       <!-- Статистика студии -->
       <section class="statistics">
-        <!--размеры логотипа пока не прописывала-->
         <div class="logo">
-          <img src="img/nerds.png" width="" height="" alt="Логотип дизайн-студии Nerds"> 
+          <img src="img/nerds.png" width="360px" height="208px" alt="Логотип дизайн-студии Nerds"> 
         </div> 
         <table >
           <caption>С 2004 года любим точность во всем:</caption>
@@ -114,10 +112,10 @@
       <!-- Партнеры -->
       <section class="partners">
         <ul class="partners-list">
-          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" alt="Логотип Htmlacademy"></a></li>
-          <li><a href="#"><img src="img/borodinski-logo.png" alt="Логотип барбершоп Borodinski"></a></li>
-          <li><a href="#"><img src="img/pink-logo.png" alt="Логотип Pink"></a></li>
-          <li><a href="#"><img src="img/mishka-logo.png" alt="Логотип Mishka"></a></li>
+          <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199px" height="68px" alt="Логотип Htmlacademy"></a></li>
+          <li><a href="#"><img src="img/borodinski-logo.png" width="209px" height="90px" alt="Логотип барбершоп Borodinski"></a></li>
+          <li><a href="#"><img src="img/pink-logo.png" width="185px" height="52px" alt="Логотип Pink"></a></li>
+          <li><a href="#"><img src="img/mishka-logo.png" width="173px" height="84px" alt="Логотип Mishka"></a></li>
         </ul>       
       </section>
     </main>
@@ -130,31 +128,7 @@
           тел. +7 (812) 275-75-75
           <!-- здесь будет карта -->
         </p>
-        <a class="write-us-link" href="#">
-          Напишите нам
-        </a>
-
-        <section class=" modal modal-write-us">
-          <h2>Напишите нам</h2>
-          <form class="appointment-form" action="#" method="post">
-            <p class="appointment-item half-width">
-              <label for="appointment-name">Ваше имя:</label>
-              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </p>
-            <p class="appointment-item half-width">
-              <label for="appointment-email">Ваш e-mail:</label>
-              <input id="appointment-email" type="e-mail" name="email" value="" placeholder="email@example.com">
-            </p>
-            <p class="appointment-item">
-              <label for="appointment-comment">Текст письма:</label>
-              <input id="appointment-comment" type="text" name="comment" value="" placeholder="В свободной форме">
-            </p>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-close" type="button">
-            Закрыть <!-- текста на макете нет, может быть его нужно указывать в aria-label? -->
-          </button>
-        </section>
+        <button class="button" type="button">Напишите нам</button>
       </section>
       <div class="footer-social">
         <ul>
@@ -168,5 +142,26 @@
         </div>
       </div>
     </footer>
+    <section class=" modal modal-write-us">
+      <h2>Напишите нам</h2>
+      <form class="appointment-form" action="#" method="post">
+        <p class="appointment-item half-width">
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="appointment-item half-width">
+          <label for="appointment-email">Ваш e-mail:</label>
+          <input id="appointment-email" type="e-mail" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-comment">Текст письма:</label>
+          <input id="appointment-comment" type="text" name="comment" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
   </body>
 </html>
