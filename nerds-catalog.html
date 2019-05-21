@@ -18,7 +18,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket">Корзина</li>
+          <li class="basket">
+            <a class="basket-link" href="#">Корзина</a> <!--какую указывать ссылку?-->
+          </li>
         </ul>
       </nav>
     </header>
@@ -27,8 +29,77 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- Здесь будет форма для фильтра-->
-        <input type="button" value="Показать">      
+        <form class="filter" method="get" action="#"> <!-- какую ссылку указывать? -->
+          <!-- необязательное задание СТОИМОСТЬ-->
+          <fieldset>
+            <legend>СТОИМОСТЬ:</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid type" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid type" value="fixed" id="filter-fixed" >
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid type" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>ОСОБЕННОСТИ:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slaider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+                <label for="filter-advantage-block">Блок преимуществ</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                <label for="filter-basket">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+            <!-- необязательное задание СОРТИРОВАТЬ-->
+            <legend>СОРТИРОВАТЬ:</legend> 
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sorting" value="price" id="filter-price" checked>
+                <label for="filter-price">По цене</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sorting" value="type" id="filter-type" >
+                <label for="filter-type">По типу</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sorting" value="product-name" id="filter-product-name">
+                <label for="filter-product-name">По названию</label>
+              </li>
+            </ul>
+            <!-- на кнопках текста нет, может быть нужно использовать aria-label?-->
+            <button class="button sorting-button sort-descending-button" type="button">По убыванию</button>
+            <button class="button sorting-button sort-ascending-button" type="button">По возрастанию</button>
+          </fieldset>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Шаблоны</h2>
@@ -97,17 +168,45 @@
       </section>
     </main>
     <footer class="site-footer">
+      <section class="contacts">
+        <p class="footer-contacts">
+          NЁRDS DESIGN STUDIO<br>
+          191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812) 275-75-75
+          <!-- здесь будет карта -->
+        </p>
+        <section class="write-us">
+          <h2>Напишите нам</h2>
+          <form class="appointment-form" action="#" method="post">
+            <p class="appointment-item half-width">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="appointment-item half-width">
+              <label for="appointment-email">Ваш e-mail:</label>
+              <input id="appointment-email" type="e-mail" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-comment">Текст письма:</label>
+              <input id="appointment-comment" type="text" name="comment" value="" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <button class="popup-close" type="button">
+            Закрыть <!-- текста на макете нет, может быть его нужно указывать в aria-label? -->
+          </button>
+        </section>
+      </section>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li> 
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-      <div class="maps">
-        <script type="text/javascript"></script>
+        <div class="friends">
+          <strong>Давайте дружить, это выгодно!</strong>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
   </body>

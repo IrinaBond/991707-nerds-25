@@ -18,7 +18,9 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="basket">Корзина</li>
+          <li class="basket">
+            <a class="basket-link" href="#">Корзина</a> <!--какую указывать ссылку?-->
+          </li>
         </ul>
       </nav>
     </header>
@@ -28,25 +30,26 @@
       <!-- Слайдер -->
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
+        <!-- 
+        <input type="radio" name="slider" value="slide-1" checked="">
+        <input type="radio" name="slider" value="slide-2">
+        <input type="radio" name="slider" value="slide-3">  
+        -->      
         <ul class="features-list">
-          <!-- Блок с инпутами для переключения слайдом должен быть тут. Один один для всех слайдов. -->
-          <li class="features-item">
+          <li class="features-item features-item-1">
             <h3>Долго, дорого, скупрпулезно.</h3>
             <p>Математически выверенный дизайн вашего сайта или мобильного приложения</p>
             <a class="button" href="#">Узнать больше</a>
-            <!-- предполагаю, что img будет фоном, в html не вставляла -->
           </li>
-          <li class="features-item">
+          <li class="features-item features-item-2">
             <h3>Любим математику как никто другой</h3>
             <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button" href="#">Узнать больше</a>
-            <!-- предполагаю, что img будет фоном, в html не вставляла -->
           </li>
-          <li class="features-item">
+          <li class="features-item features-item-3">
             <h3>Только ночь, только хардкор.</h3>
-            <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается</p> 
+            <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается</p>
             <a class="button" href="#">Узнать больше</a>
-            <!-- предполагаю, что img будет фоном, в html не вставляла -->
           </li>
         </ul>
       </section>
@@ -120,10 +123,43 @@
     </main>
     
     <footer class="site-footer">
+      <section class="contacts">
+        <p class="footer-contacts">
+          NЁRDS DESIGN STUDIO<br>
+          191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8<br>
+          тел. +7 (812) 275-75-75
+          <!-- здесь будет карта -->
+        </p>
+        <a class="write-us-link" href="#">
+          Напишите нам
+        </a>
+
+        <section class=" modal modal-write-us">
+          <h2>Напишите нам</h2>
+          <form class="appointment-form" action="#" method="post">
+            <p class="appointment-item half-width">
+              <label for="appointment-name">Ваше имя:</label>
+              <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+            </p>
+            <p class="appointment-item half-width">
+              <label for="appointment-email">Ваш e-mail:</label>
+              <input id="appointment-email" type="e-mail" name="email" value="" placeholder="email@example.com">
+            </p>
+            <p class="appointment-item">
+              <label for="appointment-comment">Текст письма:</label>
+              <input id="appointment-comment" type="text" name="comment" value="" placeholder="В свободной форме">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">
+            Закрыть <!-- текста на макете нет, может быть его нужно указывать в aria-label? -->
+          </button>
+        </section>
+      </section>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li> 
           <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
         <div class="friends">
