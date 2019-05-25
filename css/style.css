@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
 
+  color: #283136;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
-  color: #283136;
+  line-height: 24px;
   text-transform: none;
   
   background-color: #ffffff;
@@ -102,7 +102,6 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  text-transform: uppercase;
 }
 
 .services-list {
@@ -161,6 +160,44 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.description strong {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.description h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.statistics caption {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.statistics th {
+  line-height: 18px;
+  font-weight: 400;
+
+}
+
+.statistics td {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 10.06px;
+}
+
+.statistics span {
+  font-size: 24px;
+  font-weight: 700;
+  vertical-align: super;
+}
+
 .partners-list li {
   opacity: 0.2;
 }
@@ -180,8 +217,8 @@ a {
 
 .filter legend {
   font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
+  line-height: 30px;
   text-transform: uppercase;
 }
 
@@ -237,6 +274,8 @@ a {
 .order-field {
   display: none;
   background-color: #eeeeee;
+
+  line-height: 18px;
 }
 
 .catalog-item:hover  .order-field{
@@ -261,6 +300,9 @@ a {
 
 .order-field .button {
   color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px; 
   text-transform: uppercase;
 }
 
@@ -269,6 +311,16 @@ a {
 .order-field .button:focus,
 .order-field .button:active {
   color: #ffffff;
+}
+
+.footer-contacts {
+  line-height: 18px;
+}
+
+.footer-contacts span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
 }
 
 .footer-social ul{
