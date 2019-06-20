@@ -26,6 +26,7 @@ body {
   padding-bottom: 110px;
   background-color: #eeeeee;
   margin-bottom: 55px;
+  color: #000000;
 }
 
 .inner-page h1 {
@@ -324,6 +325,7 @@ input[type="radio"].visually-hidden {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  color: #000000;
 }
 
 .slider-item p {
@@ -361,6 +363,7 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -449,6 +452,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+  color: #000000;
 }
 
 .description h3 {
@@ -458,6 +462,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -514,6 +519,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -534,6 +540,7 @@ input[type="radio"].visually-hidden {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
+  color: #000000;
 }
 
 .statistics span {
@@ -692,6 +699,7 @@ input[type="radio"].visually-hidden {
   width: 50%;
 
   font-size: 16px;
+  line-height: 22px;
   text-transform: uppercase;
 }
 
@@ -702,6 +710,7 @@ input[type="radio"].visually-hidden {
 
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #283136;
 
@@ -720,6 +729,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -947,6 +957,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-field p {
+  width: 230px;
   margin: 0;
   padding: 0;
 }
@@ -1024,6 +1035,7 @@ input[type="radio"].visually-hidden {
 .map-wrapper {
   position: relative;
   margin-bottom: 70px;
+  background-color: #e9e5dc;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: -45px -150px;
@@ -1058,6 +1070,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   line-height: 18px;
+  color: #666666;
 }
 
 .footer-contacts-name {
@@ -1066,6 +1079,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+  color: #000000;
 }
 
 .footer-contacts-tel {
@@ -1129,6 +1143,7 @@ input[type="radio"].visually-hidden {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
+  color: #000000;
 }
 
 .friends p{
@@ -1136,12 +1151,17 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 10px;
   line-height: 22px;
+  color: #444444;
 }
 
 .modal {
   position: fixed;
   display: none;
   z-index: 2;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-write-us {

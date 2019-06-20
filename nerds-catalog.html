@@ -140,7 +140,7 @@
                 </figure>
                 <div class="order-field">
                   <h3><a href="#">Barbershop</a></h3>
-                  <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
                   <a class="button" href="#">9900 РУБ.</a>
                 </div>
               </li>
@@ -150,7 +150,7 @@
                 </figure>
                 <div class="order-field">
                   <h3><a href="#">Mishka</a></h3>
-                  <p>Интернет-магазин<br> вязаных игрушек</p>
+                  <p>Интернет-магазин вязаных игрушек</p>
                   <a class="button" href="#">9900 РУБ.</a>
                 </div>
               </li>
@@ -194,7 +194,7 @@
               191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8<br>
               <span class="footer-contacts-tel">тел. +7 (812) 275-75-75</span>
             </p>
-            <button class="button" type="button">Напишите нам</button>
+            <button class="button button-write-us" type="button">Напишите нам</button>
           </section>
         </div>
       </div>
@@ -233,11 +233,11 @@
       <form class="appointment-form" action="#" method="post">
         <p class="appointment-item half-width">
           <label for="appointment-name">Ваше имя:</label>
-          <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          <input id="appointment-name" type="text" name="guestname" value="" placeholder="Имя Фамилия">
         </p>
         <p class="appointment-item half-width">
           <label for="appointment-email">Ваш e-mail:</label>
-          <input id="appointment-email" type="email" name="email" value="" placeholder="email@example.com">
+          <input id="appointment-email" type="email" name="guestemail" value="" placeholder="email@example.com">
         </p>
         <p class="appointment-item">
           <label for="appointment-comment">Текст письма:</label>
@@ -249,5 +249,35 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section> 
+    <script>
+      var link = document.querySelector(".button-write-us");
+      var popup = document.querySelector(".modal-write-us");
+      var close = document.querySelector(".modal-close");
+      var form = popup.querySelector(".appointment-form");
+      var guestname = popup.querySelector("[name=guestname]");
+      var guestemail = popup.querySelector("[name=guestemail]");
+
+      link.addEventListener("click", function (evt) {
+        console.log("Клик во кнопке Напишите нам");
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        guestname.focus();
+      })
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      })
+
+      form.addEventListener("submit", function (evt) {
+        evt.preventDefault();
+        if (!guestname.value || !guestemail.value) {
+          evt.preventDefault();
+          console.log("Нужно ввести логин и пароль");
+        }
+      })
+
+
+    </script>
   </body>
 </html>
