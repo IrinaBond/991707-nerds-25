@@ -37,22 +37,22 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
+            <i class="controls1 active"></i>
+            <i class="controls2"></i>
+            <i class="controls3"></i>
           </div>
           <ul class="slider-list">
-            <li class="slider-item">
+            <li class="slider-item slide1 slide-show">
               <h3>Долго, дорого,<br> скрупулезно.</h3>
               <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li class="slider-item">
+            <li class="slider-item slide2">
               <h3>Любим математику как никто другой</h3>
               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
             </li>
-            <li class="slider-item">
+            <li class="slider-item slide3">
               <h3>Только ночь,<br> только хардкор.</h3>
               <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается</p>
               <a class="slider-item-button button" href="#">Узнать больше</a>
@@ -109,16 +109,14 @@
             <table class="table">
               <caption>С 2004 года любим точность во всем:</caption>
               <tr>
-                <th>Уровень самоотдачи</th>
                 <td>146<span>%</span></td>
-              </tr>
-              <tr>
-                <th>Соблюдение сроков</th>
                 <td>100<span>%</span></td>
+                <td>50<span>%</span></td>
               </tr>
               <tr>
+                <th>Уровень самоотдачи</th>
+                <th>Соблюдение сроков</th>
                 <th>Минимальная предоплата</th>
-                <td>50<span>%</span></td>
               </tr>
             </table>        
           </section>
@@ -139,16 +137,15 @@
     
     <footer class="site-footer">
       <div class="map-wrapper">
-        <div class="contacts-wrapper container">
-          <section class="contacts">
-            <p class="footer-contacts">
-              <span class="footer-contacts-name">NЁRDS DESIGN STUDIO</span>
-              191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8<br>
-              <span class="footer-contacts-tel">тел. +7 (812) 275-75-75</span>
-            </p>
-            <button class="button button-write-us" type="button">Напишите нам</button>
-          </section>
-        </div>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBFXQGSKCD" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
+        <section class="contacts">
+          <p class="footer-contacts">
+            <span class="footer-contacts-name">NЁRDS DESIGN STUDIO</span>
+            191186, Санкт-Петербург,<br>  ул. Б. Конюшенная, д. 19/8<br>
+            <span class="footer-contacts-tel">тел. +7 (812) 275-75-75</span>
+          </p>
+          <button class="button button-write-us" type="button">Напишите нам</button>
+        </section>
       </div>
       <div class="footer-social container">
         <ul>
@@ -193,7 +190,7 @@
         </p>
         <p class="appointment-item">
           <label for="appointment-comment">Текст письма:</label>
-          <input id="appointment-comment" type="text" name="comment" value="" placeholder="В свободной форме">
+          <textarea id="appointment-comment" name="comment" placeholder="В свободной форме"></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
@@ -201,37 +198,8 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <!--<div class="overlay"></div>-->
-
-    <script>
-      var link = document.querySelector(".button-write-us");
-      var popup = document.querySelector(".modal-write-us");
-      var close = document.querySelector(".modal-close");
-      var form = popup.querySelector(".appointment-form");
-      var guestname = popup.querySelector("[name=guestname]");
-      var guestemail = popup.querySelector("[name=guestemail]");
-
-      link.addEventListener("click", function (evt) {
-        console.log("Клик во кнопке Напишите нам");
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        guestname.focus();
-      })
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      })
-
-      form.addEventListener("submit", function (evt) {
-        evt.preventDefault();
-        if (!guestname.value || !guestemail.value) {
-          evt.preventDefault();
-          console.log("Нужно ввести логин и пароль");
-        }
-      })
-
-
-    </script>
+    <div class="overlay"></div>
+    <script src="./js/slider.js"></script>
+    <script src="./js/popup.js"></script>
   </body>
 </html>
