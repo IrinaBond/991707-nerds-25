@@ -303,7 +303,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
-  background-position: 100% 0px;
+  background-position: 100% 0;
 }
 
 .slider-item:nth-child(2) {
@@ -315,7 +315,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(3) {
   background-image: url("../img/nerds-index-slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 0px;
+  background-position: 100% 0;
 }
 
 .slider-item h3 {
@@ -481,7 +481,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-list li {
-  display: blok;
+  display: block;
   position: relative;
   margin: 0;
   margin-bottom: 25px;
@@ -722,7 +722,7 @@ input[type="radio"].visually-hidden {
 
 .filter-item legend,
 .sorting h3 {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 15px;
 
   font-size: 18px;
@@ -1114,6 +1114,7 @@ input[type="radio"].visually-hidden {
 
 .map-wrapper iframe {
   border: 0;
+  width: 100%;
 }
 
 /*.map-wrapper::before {
@@ -1211,7 +1212,7 @@ input[type="radio"].visually-hidden {
 
 .friends {
   margin-top: 5px;
-  width: 560 px;
+  width: 560px;
 }
 
 .friends strong{
@@ -1318,6 +1319,7 @@ input[type="radio"].visually-hidden {
   font: inherit;
   vertical-align: top;
 
+  color: rgb(68, 68, 68);
   color: rgba(68, 68, 68, 0.5);
   background-color: transparent;
   border: 2px solid #d7dcde;
@@ -1337,7 +1339,7 @@ input[type="radio"].visually-hidden {
 
 .appointment-item input:focus,
 .appointment-item textarea:focus {
-  color: rgba(68, 68, 68, 1);
+  color: rgb(68, 68, 68);
   border: 2px solid #000000;
 }
 
@@ -1370,7 +1372,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.1) 
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .overlay-show {
